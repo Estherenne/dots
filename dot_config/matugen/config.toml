@@ -1,0 +1,16 @@
+[templates.waybar]
+input_path = '~/.config/waybar/style.css.tmpl'
+output_path = '~/.config/waybar/style.css'
+
+[templates.sway]
+input_path = '~/.config/sway/config.tmpl'
+output_path = '~/.config/sway/config'
+
+[templates.screenshot_sh]
+input_path = '~/scripts/screenshot.sh.tmpl'
+output_path = '~/scripts/screenshot.sh'
+
+[config.wallpaper]
+command = "swww"
+arguments = ["img", "--transition-type", "center"]
+set = true

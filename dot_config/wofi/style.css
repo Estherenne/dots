@@ -1,0 +1,28 @@
+window {
+  font-size: 28px;
+  margin: 8px;
+  border: 4px solid #eb6f92;
+  background-color: #191724;
+  font-family: "Adwaita Mono";
+}
+
+#input {
+  border: 2px solid #ebbcba;
+  background-color: #1f1d2e;
+  border-radius: 0;
+  font-size: 18px;
+  color: #e0def4;
+}
+
+#outer-box,
+#scroll,
+#text,
+#inner-box {
+  margin: 7px;
+  background-color: #191724;
+  color: #e0def4;
+}
+
+#entry {
+  background-color: #191724;
+}
