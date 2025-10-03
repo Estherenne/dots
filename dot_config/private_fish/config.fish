@@ -25,6 +25,10 @@ if status is-interactive
   end
 
   function fish_greeting
+<<<<<<< HEAD
+=======
+    fastfetch
+>>>>>>> 233657d (fastfetch)
   end
 
   # misc
