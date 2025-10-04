@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SELECTION="$(printf "󰄀 Screenshot\n󰕧 Record\n" | rofi -dmenu) 
+SELECTION="$(printf "󰄀 Screenshot\n󰕧 Record\n" | rofi -dmenu) "
 
 case $SELECTION in
 	*"Screenshot")

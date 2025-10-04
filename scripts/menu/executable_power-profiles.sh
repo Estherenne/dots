@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SELECTION="$(printf "󰓅 Performance\n󰗑 Balanced\n󰌪 Power saver\n" | rofi -dmenu)
+SELECTION="$(printf "󰓅 Performance\n󰗑 Balanced\n󰌪 Power saver\n" | rofi -dmenu)"
 
 case $SELECTION in
 	*"Performance")
