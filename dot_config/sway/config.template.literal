@@ -20,7 +20,7 @@ set $menu vicinae toggle
 
 exec vicinae server
 exec waybar
-exec ~/.software/autotiling
+exec autotiling-rs
 exec swww-daemon
 
 blur enable
