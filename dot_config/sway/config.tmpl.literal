@@ -16,7 +16,7 @@ set $right l
 # Your preferred terminal emulator
 set $term ghostty --window-decoration=none --background-opacity=0.8
 # Your preferred application launcher
-set $menu vicinae
+set $menu vicinae toggle
 
 exec vicinae server
 exec waybar
@@ -211,7 +211,7 @@ bindsym $mod+r mode "resize"
     # control brightness using light(1)
     bindsym --locked XF86MonBrightnessDown exec light -U 5
     bindsym --locked XF86MonBrightnessUp exec light -A 5
-    # screenshot. horribly long command but it works so well
+    # screenshot 
     bindsym Print exec ~/scripts/screenshot.sh region
 
 default_border pixel 4

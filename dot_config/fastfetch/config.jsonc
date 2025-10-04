@@ -20,8 +20,8 @@
     },
     {
       "type": "wm",
-      "format": "{5} {1}",
-      "key": "wm   ",
+      "format": "{1} ({5}",
+      "key": "wm    ",
       "keyColor": "97"
     },
     {
@@ -40,7 +40,6 @@
       "type": "memory",
       "key": "memory",
       "keyColor": "205"
-    },
-    "break"
+    }
     ]
 }
