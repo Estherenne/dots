@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SELECTION="$(printf "󰓅 Performance\n󰗑 Balanced\n󰌪 Power saver\n" | wofi --show=dmenu --width 275 --prompt "Power" --xoffset 813 --yoffset 300 --height 225)"
+SELECTION="$(printf "󰓅 Performance\n󰗑 Balanced\n󰌪 Power saver\n" | rofi -dmenu)
 
 case $SELECTION in
 	*"Performance")

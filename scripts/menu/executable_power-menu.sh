@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SELECTION="$(printf "󰌾 Lock\n󰒲 Suspend\n󰠜 Log out\n󰜉 Reboot\n󰐥 Shutdown" | wofi --show=dmenu --width 240 --prompt "Power" --xoffset 836 --yoffset 300 --height 340)"
+SELECTION="$(printf "󰌾 Lock\n󰒲 Suspend\n󰠜 Log out\n󰜉 Reboot\n󰐥 Shutdown" | rofi -dmenu)"
 
 case $SELECTION in
 	*"Lock")

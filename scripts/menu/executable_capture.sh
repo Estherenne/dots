@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-SELECTION="$(printf "󰄀 Screenshot\n󰕧 Record\n" | wofi --show=dmenu --width 275 --prompt "Capture" --xoffset 813 --yoffset 300 --height 225)"
+SELECTION="$(printf "󰄀 Screenshot\n󰕧 Record\n" | rofi -dmenu) 
 
 case $SELECTION in
 	*"Screenshot")
-		~/scripts/fuzzel/capture-screenshot.sh;;
+		~/scripts/menu/capture-screenshot.sh;;
 	*"Record")
-		~/scripts/fuzzel/capture-record.sh;;
+		~/scripts/menu/capture-record.sh;;
 esac
 
