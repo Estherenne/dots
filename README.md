@@ -20,7 +20,7 @@ matugen image path/to/wallpaper.png
 then reload waybar, sway, whatever else is using matugen theming
 ## todo
 - [ ] clean up ghostty and sway config
-- [ ] switch to rofi in favor of wofi
+- [x] switch to rofi
 - [ ] vicinae matugen theme
 - [ ] ghostty matugen theme (i think matugen should be able to generate a full color palette)
   - [ ] make nvim use ghostty's colors so it is also themed

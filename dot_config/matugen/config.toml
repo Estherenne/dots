@@ -1,14 +1,18 @@
 [templates.waybar]
-input_path = '~/.config/waybar/style.css.tmpl'
+input_path = '~/.config/waybar/style.css.template'
 output_path = '~/.config/waybar/style.css'
 
 [templates.sway]
-input_path = '~/.config/sway/config.tmpl'
+input_path = '~/.config/sway/config.template'
 output_path = '~/.config/sway/config'
 
 [templates.screenshot_sh]
-input_path = '~/scripts/screenshot.sh.tmpl'
+input_path = '~/scripts/screenshot.sh.template'
 output_path = '~/scripts/screenshot.sh'
+
+[templates.rofi]
+input_path = '~/.config/rofi/config.rasi.template'
+output_path = '~/.config/rofi/config.rasi'
 
 [config.wallpaper]
 command = "swww"

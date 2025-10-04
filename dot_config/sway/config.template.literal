@@ -92,6 +92,9 @@ output HDMI-A-1 resolution 1920x1080 position 1920,0 adaptive_sync on
     # Start your launcher
     bindsym $mod+space exec $menu
 
+    # open menu
+    bindsym $mod+Shift+space exec ~/scripts/menu/menu.sh
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
