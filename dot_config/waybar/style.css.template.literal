@@ -70,6 +70,12 @@ button:hover {
     font-size: 17px;
 }
 
+#custom-menu {
+    padding-left: 6px;
+    color: {{colors.on_background.default.hex}};
+    font-size: 21px;
+}
+
 #window,
 #workspaces {
     margin: 0 4px;

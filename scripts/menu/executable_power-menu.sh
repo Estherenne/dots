@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SELECTION="$(printf "󰌾 Lock\n󰒲 Suspend\n󰠜 Log out\n󰜉 Reboot\n󰐥 Shutdown" | rofi -dmenu)"
+SELECTION="$(printf "󰌾 Lock\n󰒲 Suspend\n󰠜 Log out\n󰜉 Reboot\n󰐥 Shutdown" | rofi -dmenu -theme-str "window { height: 255px; }")"
 
 case $SELECTION in
 	*"Lock")

@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-SELECTION="$(printf "󰀁 Screenshot region\n󰖲 Screenshot window\n󰍹 Screenshot output" | rofi -dmenu )"
-# --width 375 --xoffset 763 --yoffset 300 --height 225
+SELECTION="$(printf "󰀁 Screenshot region\n󰖲 Screenshot window\n󰍹 Screenshot output" | rofi -dmenu -theme-str "window { height: 175px; }")"
 case $SELECTION in
 	*"Screenshot region")
 		~/scripts/screenshot.sh region;;

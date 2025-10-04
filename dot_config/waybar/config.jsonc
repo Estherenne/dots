@@ -4,7 +4,8 @@
     "height": 32,
     "spacing": 4,
     "modules-left": [
-        "sway/workspaces",
+        "custom/menu",
+        "sway/workspaces"
     ],
     "modules-center": [
         "clock"
@@ -64,7 +65,7 @@
         "format-wifi": "{icon}",
         "format-ethernet": "",
         "tooltip-format": "{ifname} via {gwaddr}",
-        "format-disconnected": "󰤭",
+        "format-disconnected": "󰤭"
     },
     "pulseaudio": {
         "scroll-step": 2,
@@ -74,4 +75,8 @@
         },
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     },
+    "custom/menu": {
+        "format": "󱄅",
+        "on-click": "~/scripts/menu/menu.sh" 
+    } 
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SELECTION="$(printf "󰄀 Screenshot\n󰕧 Record\n" | rofi -dmenu) "
+SELECTION="$(printf "󰄀 Screenshot\n󰕧 Record\n" | rofi -dmenu -theme-str "window { height: 135px; }")"
 
 case $SELECTION in
 	*"Screenshot")
