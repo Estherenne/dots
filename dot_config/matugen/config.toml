@@ -10,6 +10,10 @@ output_path = '~/.config/sway/config'
 input_path = '~/scripts/screenshot.sh.template'
 output_path = '~/scripts/screenshot.sh'
 
+[templates.record_sh]
+input_path = '~/scripts/record.sh.template'
+output_path = '~/scripts/record.sh'
+
 [templates.rofi]
 input_path = '~/.config/rofi/config.rasi.template'
 output_path = '~/.config/rofi/config.rasi'

@@ -23,6 +23,8 @@ exec waybar
 exec autotiling-rs
 exec swww-daemon
 
+seat seat0 xcursor_theme Posy_Cursor_Black 24
+
 blur enable
 blur_radius 7
 shadows enable
