@@ -1,10 +1,13 @@
 [templates.waybar]
 input_path = '~/.config/waybar/style.css.template'
 output_path = '~/.config/waybar/style.css'
+pre_hook = 'pkill waybar'
+post_hook = 'waybar > /dev/null & disown'
 
 [templates.sway]
 input_path = '~/.config/sway/config.template'
 output_path = '~/.config/sway/config'
+post_hook  = 'swaymsg reload'
 
 [templates.screenshot_sh]
 input_path = '~/scripts/screenshot.sh.template'

@@ -64,10 +64,15 @@ button:hover {
 #backlight,
 #network,
 #pulseaudio,
+#custom-recording-indicator,
 #tray {
     padding: 0 10px;
     color: {{colors.on_background.default.hex}};
     font-size: 17px;
+}
+
+#custom-recording-indicator {
+    color: {{colors.error_container.default.hex}};
 }
 
 #custom-menu {
@@ -99,7 +104,7 @@ button:hover {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    color: @error_container;
+    color: {{colors.error_container.default.hex}};
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);

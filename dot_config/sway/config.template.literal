@@ -97,6 +97,9 @@ output HDMI-A-1 resolution 1920x1080 position 1920,0 adaptive_sync on
     # open menu
     bindsym $mod+Shift+space exec ~/scripts/menu/menu.sh
 
+    # stop recording
+    bindsym $mod+Shift+S exec pkill wl-screenrec
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -218,6 +221,7 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessUp exec light -A 5
     # screenshot 
     bindsym Print exec ~/scripts/screenshot.sh region
+    bindsym Pause exec playerctl -p mpv play-pause
 
 default_border pixel 4
 
