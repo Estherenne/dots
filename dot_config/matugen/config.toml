@@ -14,6 +14,11 @@ input_path = '~/.config/mako/config.template'
 output_path = '~/.config/mako/config'
 post_hook = 'makoctl reload'
 
+[templates.vicinae]
+input_path = '~/.config/vicinae/themes/matugen.json.template'
+output_path = '~/.config/vicinae/themes/matugen.json'
+post_hook = 'vicinae server > /dev/null & disown'
+
 [templates.screenshot_sh]
 input_path = '~/scripts/screenshot.sh.template'
 output_path = '~/scripts/screenshot.sh'

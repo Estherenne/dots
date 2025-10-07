@@ -21,7 +21,7 @@ then reload waybar, sway, whatever else is using matugen theming
 ## todo
 - [ ] clean up ghostty and sway config
 - [x] switch to rofi
-- [ ] vicinae matugen theme
+- [x] vicinae matugen theme
 - [ ] ghostty matugen theme (i think matugen should be able to generate a full color palette)
   - [ ] make nvim use ghostty's colors so it is also themed
 - [ ] finish the menu scripts
