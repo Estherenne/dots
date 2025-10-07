@@ -9,6 +9,11 @@ input_path = '~/.config/sway/config.template'
 output_path = '~/.config/sway/config'
 post_hook  = 'swaymsg reload'
 
+[templates.mako]
+input_path = '~/.config/mako/config.template'
+output_path = '~/.config/mako/config'
+post_hook = 'makoctl reload'
+
 [templates.screenshot_sh]
 input_path = '~/scripts/screenshot.sh.template'
 output_path = '~/scripts/screenshot.sh'

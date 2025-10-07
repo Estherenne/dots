@@ -29,6 +29,7 @@ blur enable
 blur_radius 7
 shadows enable
 shadows_on_csd disable
+corner_radius 10
 
 layer_effects "vicinae" {
     blur enable;

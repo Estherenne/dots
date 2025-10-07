@@ -1,0 +1,21 @@
+sort=-time
+layer=overlay
+background-color={{colors.on_primary_fixed.default.hex}}
+text-color={{colors.on_background.default.hex}}
+width=380
+height=60
+border-size=3
+border-color={{colors.surface_tint.default.hex}}
+border-radius=16
+default-timeout=5000
+font=Rubik 13
+
+[urgency=low]
+border-color={{colors.surface_tint.default.hex}}
+
+[urgency=normal]
+border-color={{colors.surface_tint.default.hex}}
+
+[urgency=high]
+border-color={{colors.error.default.hex}}
+default-timeout=0
