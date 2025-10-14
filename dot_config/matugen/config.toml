@@ -19,6 +19,14 @@ input_path = '~/.config/vicinae/themes/matugen.json.template'
 output_path = '~/.config/vicinae/themes/matugen.json'
 post_hook = 'vicinae server > /dev/null & disown'
 
+[templates.vesktop]
+input_path = '~/.config/vesktop/themes/midnight-discord.css.template'
+output_path = '~/.config/vesktop/themes/midnight-discord.css'
+
+[templates.gtklock_css]
+input_path = '~/.config/gtklock/style.css.template'
+output_path = '~/.config/gtklock/style.css'
+
 [templates.screenshot_sh]
 input_path = '~/scripts/screenshot.sh.template'
 output_path = '~/scripts/screenshot.sh'
@@ -26,6 +34,10 @@ output_path = '~/scripts/screenshot.sh'
 [templates.record_sh]
 input_path = '~/scripts/record.sh.template'
 output_path = '~/scripts/record.sh'
+
+[templates.clock_settings]
+input_path = '~/.config/gtklock/clock-settings.template'
+output_path = '~/.config/gtklock/clock-settings'
 
 [templates.rofi]
 input_path = '~/.config/rofi/config.rasi.template'

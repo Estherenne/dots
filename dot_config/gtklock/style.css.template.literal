@@ -1,0 +1,32 @@
+#clock-label {
+  color: rgba(0, 0, 0, 0);
+}
+
+#input-field {
+  background-color: {{colors.background.default.hex}};
+  color: {{colors.on_primary_container.default.hex}};
+  border: 0px;
+  margin-top: 38em;
+}
+
+button {
+  background-color: {{colors.background.default.hex}};
+  color: {{colors.on_primary_container.default.hex}};
+  border: 0px;
+}
+
+#input-label {
+  font-size: 0px;
+}
+
+#date-label {
+  color: rgba(0, 0, 0, 0);
+}
+
+#playerctl-revealer > box {
+  background-color: {{colors.background.default.hex}};
+  color: {{colors.on_primary_container.default.hex}};
+  border-radius: 16px;
+  padding: 1em;
+  margin-bottom: 4em;
+}

@@ -6,14 +6,14 @@
 	"palette": {
 	  "background": "{{colors.background.default.hex}}",
 	  "foreground": "{{colors.on_background.default.hex}}",
-	  "blue": "#89B4FA",
-	  "green": "#A6E3A1",
-	  "magenta": "#F5C2E7",
-	  "orange": "#FAB387",
-	  "purple": "#CBA6F7",
-	  "red": "#F38BA8",
-	  "yellow": "#F9E2AF",
-	  "cyan": "#94E2D5"
+	  "blue": "#1e66f5",
+	  "green": "#40a02b",
+	  "magenta": "#ea76cb",
+	  "orange": "#fe640b",
+	  "purple": "#8839ef",
+	  "red": "#d20f39",
+	  "yellow": "#df8e1d",
+	  "cyan": "#209fb5"
 	}
 }
 
