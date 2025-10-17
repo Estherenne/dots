@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SELECTION="$(printf "󰓅 Performance\n󰗑 Balanced\n󰌪 Power saver\n" | rofi -dmenu -theme-str "window { height: 175px; } ")"
+SELECTION="$(printf "󰓅 Performance\n󰗑 Balanced\n󰌪 Power saver\n" | rofi -dmenu -theme-str "window { height: 179px; } ")"
 
 case $SELECTION in
 	*"Performance")

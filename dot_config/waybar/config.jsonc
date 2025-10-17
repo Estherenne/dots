@@ -65,6 +65,7 @@
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format-wifi": "{icon}",
     "format-ethernet": "",
+    "on-click": "ghostty --window-decoration=none --background-opacity=0.8 -e nmtui",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-disconnected": "󰤭"
   },

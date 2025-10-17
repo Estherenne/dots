@@ -8,7 +8,7 @@ border-size=3
 border-color={{colors.surface_tint.default.hex}}
 border-radius=16
 default-timeout=5000
-font=Rubik 13
+font=Adwaita Sans 13
 
 [urgency=low]
 border-color={{colors.surface_tint.default.hex}}

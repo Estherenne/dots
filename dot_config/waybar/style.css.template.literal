@@ -1,5 +1,5 @@
 * {
-    font-family: 'Rubik', 'Symbols Nerd Font Mono';
+    font-family: 'Adwaita Sans', 'Symbols Nerd Font Mono';
     font-weight: 500;
     font-size: 14px;
 }
