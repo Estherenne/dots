@@ -3,13 +3,13 @@ the ~115000th dotfiles repository on github
 
 this is very inspired by omarchy but i also dont like hyprland so i made this
 ## software i use
-- wm: sway
+- wm: niri
 - launcher, clipboard manager: vicinae
 - launcher 2 (this one is used for the menu scripts): wofi
-- terminal: ghostty
+- terminal: kitty
 - text editor: nvim
 - bar: waybar
-- shell: fish
+- shell: zsh
 ## installation
 i think you can figure it out for the most part, but a somewhat unclear part of applying this config:
 
@@ -19,9 +19,6 @@ matugen image path/to/wallpaper.png
 ```
 then reload waybar, sway, whatever else is using matugen theming
 ## todo
-- [ ] clean up ghostty and sway config
 - [x] switch to rofi
 - [x] vicinae matugen theme
-- [ ] ghostty matugen theme (i think matugen should be able to generate a full color palette)
-  - [ ] make nvim use ghostty's colors so it is also themed
 - [ ] finish the menu scripts
