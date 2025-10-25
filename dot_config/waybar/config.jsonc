@@ -13,6 +13,7 @@
   "modules-right": [
     "tray",
     "custom/recording-indicator",
+    "custom/vpn",
     "backlight",
     "network",
     "pulseaudio",
@@ -53,6 +54,7 @@
   },
   "battery": {
     "states": {
+      "low": 20,
       "critical": 10
     },
     "format": "{icon}",
@@ -65,7 +67,7 @@
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format-wifi": "{icon}",
     "format-ethernet": "",
-    "on-click": "ghostty --window-decoration=none --background-opacity=0.8 -e nmtui",
+    "on-click": "kitty -e nmtui",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-disconnected": "󰤭"
   },
@@ -87,5 +89,10 @@
     "exec": "~/scripts/recording-indicator.sh check",
     "on-click": "~/scripts/record.sh stop", 
     "interval": 1 
-  } 
+  },
+  "custom/vpn": {
+    "format": "{}",
+    "exec": "~/scripts/vpn.sh check-waybar",
+    "interval": 1
+  }
 }

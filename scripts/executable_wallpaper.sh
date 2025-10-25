@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-WALLPAPER=$1
+WALLPAPER=~/Pictures/wallpapers/$1
 
-cp $WALLPAPER /tmp/wallpaper.png
-ffmpeg -y -i $1 /tmp/wallpaper.png
 matugen image $WALLPAPER $2
+ffmpeg -y -i ~/Pictures/wallpapers/$1 /tmp/wallpaper.png

@@ -1,5 +1,7 @@
 format = """
-$username@$hostname $directory\
+$username\
+$hostname\
+$directory\
 $git_branch\
 $git_state\
 $git_status\
@@ -8,20 +10,20 @@ $line_break\
 $character"""
 
 [username]
-show_always = true
+show_always = false
 format = '[$user](bold blue)'
 
 [hostname]
-ssh_only = false
-format = '[$hostname](bold yellow)'
+ssh_only = true
+format = ' [$hostname](bold yellow)'
 
 [directory]
 style = "blue"
 
 [character]
-success_symbol = "[>](purple)"
-error_symbol = "[>](red)"
-vimcmd_symbol = "[<](green)"
+success_symbol = "[λ](purple)"
+error_symbol = "[λ](red)"
+vimcmd_symbol = "[λ](green)"
 
 [git_branch]
 format = "[$branch]($style)"

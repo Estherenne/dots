@@ -21,6 +21,7 @@ exec waybar
 exec autotiling-rs
 exec swww-daemon
 exec_always ~/scripts/clamshell.sh
+exec poweralertd
 # idle setup
 exec swayidle -w \
         timeout 90 'gtklock' \

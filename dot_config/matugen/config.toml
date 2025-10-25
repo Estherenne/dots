@@ -7,7 +7,10 @@ post_hook = 'waybar > /dev/null & disown'
 [templates.sway]
 input_path = '~/.config/sway/config.template'
 output_path = '~/.config/sway/config'
-post_hook  = 'swaymsg reload'
+
+[templates.niri]
+input_path = '~/.config/niri/config.kdl.template'
+output_path = '~/.config/niri/config.kdl'
 
 [templates.mako]
 input_path = '~/.config/mako/config.template'
@@ -15,8 +18,8 @@ output_path = '~/.config/mako/config'
 post_hook = 'makoctl reload'
 
 [templates.vicinae]
-input_path = '~/.config/vicinae/themes/matugen.json.template'
-output_path = '~/.config/vicinae/themes/matugen.json'
+input_path = '~/.config/vicinae/themes/matugen.toml.template'
+output_path = '~/.local/share/vicinae/themes/matugen.toml'
 post_hook = 'vicinae server > /dev/null & disown'
 
 [templates.vesktop]

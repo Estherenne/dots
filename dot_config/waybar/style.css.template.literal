@@ -43,7 +43,7 @@ button {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
-    background-color: {{colors.background.default.hex}};
+    background-color: {{colors.primary_container.default.hex}};
 }
 
 #workspaces button {
@@ -65,6 +65,7 @@ button:hover {
 #network,
 #pulseaudio,
 #custom-recording-indicator,
+#custom-vpn,
 #tray {
     padding: 0 10px;
     color: {{colors.on_background.default.hex}};
@@ -72,7 +73,7 @@ button:hover {
 }
 
 #custom-recording-indicator {
-    color: {{colors.error_container.default.hex}};
+    color: {{colors.error.default.hex}};
 }
 
 #custom-menu {
@@ -102,6 +103,10 @@ button:hover {
     }
 }
 
+#battery.low:not(.charging) {
+    color: {{colors.error.default.hex}};
+}
+
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
     color: {{colors.error_container.default.hex}};
@@ -117,7 +122,7 @@ label:focus {
 }
 
 #network.disconnected {
-    color: {{colors.error_container.default.hex}};
+    color: {{colors.error.default.hex}};
 }
 
 #tray > .passive {

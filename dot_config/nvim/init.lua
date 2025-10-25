@@ -41,7 +41,8 @@ vim.pack.add({
   'https://github.com/luukvbaal/statuscol.nvim',
   'https://github.com/nvim-mini/mini.pick',
   'https://github.com/plax-00/endscroll.nvim',
-  'https://github.com/nvim-treesitter/nvim-treesitter'
+  'https://github.com/nvim-treesitter/nvim-treesitter',
+  'https://github.com/xiyaowong/transparent.nvim'
 })
 
 -- setup plugins

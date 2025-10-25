@@ -1,6 +1,0 @@
-font-family = Monaspace Neon
-window-padding-x = 6
-window-padding-y = 6
-custom-shader = ./cursor_shader.glsl
-theme = Vague
-initial-command = fish

@@ -1,4 +1,4 @@
 LS_FONT_FACE="Adwaita Sans"
 LS_FONT_WEIGHT=700
 LS_FONT_SIZE=112pt
-LS_FONT_COLOR={{colors.on_primary_fixed.default.hex}}
+LS_FONT_COLOR={{colors.on_primary.default.hex}}

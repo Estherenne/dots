@@ -25,25 +25,25 @@ configuration {
 * {
     border-colour:               {{colors.primary.default.hex}};
     handle-colour:               {{colors.primary.default.hex}};
-    background-colour:           {{colors.on_secondary_fixed.default.hex}};
-    foreground-colour:           {{colors.primary.default.hex}};
-    alternate-background:        {{colors.background.default.hex}};
-    normal-background:           {{colors.on_secondary_fixed.default.hex}};
-    normal-foreground:           {{colors.secondary_fixed.default.hex}};
+    background-colour:           {{colors.background.default.hex}};
+    foreground-colour:           {{colors.on_background.default.hex}};
+    alternate-background:        {{colors.primary_container.default.hex}};
+    normal-background:           {{colors.background.default.hex}};
+    normal-foreground:           {{colors.on_background.default.hex}};
     urgent-background:           {{colors.error_container.default.hex}};
-    urgent-foreground:           {{colors.error.default.hex}};
-    active-background:           {{colors.primary.default.hex}};
-    active-foreground:           {{colors.on_primary.default.hex}};
+    urgent-foreground:           {{colors.on_error_container.default.hex}};
+    active-background:           {{colors.background.default.hex}};
+    active-foreground:           {{colors.on_background.default.hex}};
     selected-normal-background:  {{colors.primary.default.hex}};
     selected-normal-foreground:  {{colors.on_primary.default.hex}};
     selected-urgent-background:  {{colors.error.default.hex}};
-    selected-urgent-foreground:  {{colors.error_container.default.hex}};
+    selected-urgent-foreground:  {{colors.on_error_container.default.hex}};
     selected-active-background:  {{colors.primary.default.hex}};
     selected-active-foreground:  {{colors.on_primary.default.hex}};
     alternate-normal-background: {{colors.on_secondary_fixed.default.hex}};
     alternate-normal-foreground: {{colors.secondary_fixed.default.hex}};
-    alternate-urgent-background: {{colors.error_container.default.hex}};
-    alternate-urgent-foreground: {{colors.error.default.hex}};
+    alternate-urgent-background: {{colors.on_error_container.default.hex}};
+    alternate-urgent-foreground: {{colors.on_error.default.hex}};
     alternate-active-background: {{colors.primary.default.hex}};
     alternate-active-foreground: {{colors.on_primary.default.hex}};
 }

@@ -4,10 +4,10 @@ SELECTION="$(printf "󰓅 Performance\n󰗑 Balanced\n󰌪 Power saver\n" | rofi
 
 case $SELECTION in
 	*"Performance")
-		tuned-adm profile throughput-performance;;
+		powerprofilesctl set performance;;
 	*"Balanced")
-		tuned-adm profile balanced;;
+		powerprofilesctl set balanced;;
 	*"Power saver")
-		tuned-adm profile powersave;;
+		powerprofilesctl set power-saver;;
 esac
 
