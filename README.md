@@ -5,7 +5,7 @@ this is very inspired by omarchy but i also dont like hyprland so i made this
 ## software i use
 - wm: niri
 - launcher, clipboard manager: vicinae
-- launcher 2 (this one is used for the menu scripts): wofi
+- launcher 2 (this one is used for the menu scripts): rofi
 - terminal: kitty
 - text editor: nvim
 - bar: waybar
