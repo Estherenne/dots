@@ -1,0 +1,67 @@
+## env variables
+export EDITOR="nvim"
+export PATH="$HOME/Apps:$HOME/.cargo/bin:$PATH"
+export LS_COLORS=$(vivid generate one-dark)
+export ZSH="$HOME/.oh-my-zsh"
+export PAGER="bat --pager always"
+HISTFILE=~/.histfile
+HISTSIZE=5000
+SAVEHIST=5000
+
+## plugins
+plugins=(
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
+
+## set up extra programs
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+export CARAPACE_BRIDGES="zsh,fish,bash,inshellisense"
+zstyle ":completion:*" format "\e[2;37mCompleting %d\e[m"
+zstyle ":completion:*:git:*" group-order "main commands" "alias commands" "external commands"
+source <(carapace _carapace)
+
+source $ZSH/oh-my-zsh.sh
+
+## aliases
+alias cd="z"
+
+alias ls="eza --time-style=relative --git --octal-permissions --icons -lg"
+alias la="eza --time-style=long-iso --git --octal-permissions --icons -la"
+alias lm="eza -1"
+alias preview="fzf --preview='bat {} --color=always'"
+
+alias nv="nvim"
+
+alias cat="bat"
+
+## functions
+lff() {
+    cd "$(command lf -print-last-dir "$@")"
+} 
+
+# courtesy of mrusme: https://github.com/mrusme/dotfiles/blob/e956d3a663843ec36251847a53006dddb9dcdcab/.zshrc#L770-L788
+function ssh {
+  if [ "$2" = "" ]
+  then
+    conn="$1"
+    sshhost=$(printf "%s" "${conn}" | cut -d '@' -f2)
+    if rg -U -i "^#.*Features:.*mosh.*\nHost ${sshhost}" \
+      "${HOME}/.ssh/config" > /dev/null
+    then
+      printf "connecting with mosh ...\n"
+      command mosh ${conn}
+    else
+      printf "connecting with ssh ...\n"
+      command ssh ${conn}
+    fi
+  else
+    printf "connecting with ssh ...\n"
+    command ssh $@
+  fi
+} 
+
+# run at shell start
+chafa -s 80 -f symbols --symbols ascii /tmp/wallpaper.png
