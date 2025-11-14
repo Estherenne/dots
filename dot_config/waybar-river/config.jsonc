@@ -5,32 +5,36 @@
   "height": 32,
   "spacing": 4,
   "modules-left": [
-    "custom/menu"
+    "river/tags"
   ],
   "modules-center": [
-    "clock"
+    "river/window"
   ],
   "modules-right": [
     "tray",
-    "niri/language",
-    "custom/vault",
-    "custom/recording-indicator",
-    "custom/vpn",
-    "backlight",
     "network",
     "pulseaudio",
-    "battery"
+    "battery",
+    "clock"
   ],
-  "niri/language": {
-    "format": "{}",
-    "format-en": "en",
-    "format-cs": "cz"
+  "river/tags": {
+    "tag-labels": [
+      "i",
+      "ii",
+      "iii",
+      "iv",
+      "v",
+      "vi",
+      "vii",
+      "viii",
+      "ix"
+    ]
   },
   "tray": {
     "spacing": 10
   },
   "clock": {
-    "format": "{:L%A %H:%M:%S}",
+    "format": "{:%H:%M:%S}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:L%d. %B, Week #%V, %Y}",
     "interval": 1
@@ -45,25 +49,23 @@
       "low": 20,
       "critical": 10
     },
-    "format": "{icon}",
-    "format-full": "{icon}",
-    "format-charging": "",
-    "format-charging-alt": "{capacity}%",
-    "format-alt": "{capacity}%",
+    "format": "BAT: {capacity}%",
+    "format-full": "BAT: {capacity}%",
+    "format-charging": "BAT (charging): {capacity}%",
     "format-icons": ["󰂎", "󰁻", "󰁾", "󰂀", "󰁹"]
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-    "format-wifi": "{icon}",
-    "format-ethernet": "",
+    "format-wifi": "NET: {signalStrength}%",
+    "format-ethernet": "NET: ethernet",
     "on-click": "kitty -e nmtui",
     "tooltip-format": "{ifname} via {gwaddr}",
-    "format-disconnected": "󰤭"
+    "format-disconnected": "NET: down"
   },
   "pulseaudio": {
     "scroll-step": 2,
-    "format": "{icon}",
-    "format-muted": "󰝟",
+    "format": "VOL: {volume}%",
+    "format-muted": "VOL: muted",
     "format-icons": {
       "default": ["󰕿", "󰖀", "󰕾"]
     },

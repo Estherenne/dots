@@ -1,5 +1,5 @@
 * {
-    font-family: 'Adwaita Sans', 'Symbols Nerd Font Mono';
+    font-family: 'Rubik', 'Symbols Nerd Font Mono';
     font-weight: 500;
     font-size: 14px;
 }
@@ -43,7 +43,7 @@ button {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
-    background-color: {{colors.primary_container.default.hex}};
+    background-color: {{colors.background.default.hex}};
 }
 
 #workspaces button {
@@ -64,32 +64,10 @@ button:hover {
 #backlight,
 #network,
 #pulseaudio,
-#custom-recording-indicator,
-#custom-vpn,
-#custom-vault,
-#language
 #tray {
     padding: 0 10px;
     color: {{colors.on_background.default.hex}};
     font-size: 17px;
-}
-
-#custom-recording-indicator {
-    color: {{colors.error.default.hex}};
-}
-
-#language {
-  font-weight: 600;
-}
-
-#tray {
-  margin-right: 10px;
-}
-
-#custom-menu {
-    padding-left: 6px;
-    color: {{colors.on_background.default.hex}};
-    font-size: 21px;
 }
 
 #window,
@@ -113,13 +91,9 @@ button:hover {
     }
 }
 
-#battery.low:not(.charging) {
-    color: {{colors.error.default.hex}};
-}
-
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    color: {{colors.error_container.default.hex}};
+    color: @error_container;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -132,7 +106,7 @@ label:focus {
 }
 
 #network.disconnected {
-    color: {{colors.error.default.hex}};
+    color: {{colors.error_container.default.hex}};
 }
 
 #tray > .passive {

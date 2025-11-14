@@ -17,7 +17,7 @@ configuration {
     display-window:             "";
 	drun-display-format:        "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
 	window-format:              "{w} · {c} · {t}";
-  font: "Adwaita Sans 18";
+  font: "AdwaitaSans Nerd Font Plus Material Design Icons 18";
 }
 
 /*****----- Global Properties -----*****/

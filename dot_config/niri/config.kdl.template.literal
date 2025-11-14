@@ -23,6 +23,10 @@ environment {
   DISPLAY ":0"
 }
 
+switch-events {
+  lid-open { spawn "gtklock"; }
+}
+
 output "eDP-1" {
     // off
     mode "1920x1080@144"
@@ -75,6 +79,7 @@ spawn-at-startup "heylisten"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "tailscale" "systray"
 spawn-sh-at-startup "~/scripts/file-handler"
+spawn-sh-at-startup "sleep 3 ; ~/scripts/wallpaper.sh $(/usr/bin/env ls -1 ~/Pictures/wallpapers/ | sed -n $(shuf -i 1-$(ls ~/Pictures/wallpapers/ | wc -l) -n 1)p)"
 
 hotkey-overlay {
     skip-at-startup
@@ -99,7 +104,7 @@ binds {
 
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" repeat=false { spawn "kitty"; }
     Mod+Space hotkey-overlay-title="Run an Application: vicinae" { spawn "vicinae" "toggle"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: gtklock" { spawn "gtklock"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: gtklock" allow-when-locked=true { spawn "gtklock"; }
     Super+Alt+Space hotkey-overlay-title="Open menu" { spawn-sh "~/scripts/menu/menu.sh"; }
     Super+Alt+C hotkey-overlay-title="Open capture menu" { spawn-sh "~/scripts/menu/capture.sh"; }
 
@@ -213,4 +218,6 @@ binds {
     Ctrl+Alt+Delete { quit; }
 
     Mod+Shift+P { power-off-monitors; }
+
+    Pause { spawn "playerctl" "-p" "fooyin" "play-pause"; } 
 }

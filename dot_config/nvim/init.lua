@@ -32,7 +32,7 @@ vim.keymap.set('n', '<leader>qw', ':wq!<CR>')
 
 -- add plugins
 vim.pack.add({
-  'https://github.com/windwp/nvim-autopairs',
+  'https://github.com/nvim-mini/mini.pairs',
   'https://github.com/stevearc/oil.nvim',
   'https://github.com/saghen/blink.cmp',
   'https://github.com/mason-org/mason.nvim',
@@ -46,7 +46,7 @@ vim.pack.add({
 })
 
 -- setup plugins
-require('nvim-autopairs').setup {}
+require('mini.pairs').setup()
 require('mason').setup()
 require('oil').setup()
 require('mini.pick').setup()
@@ -63,14 +63,14 @@ require('blink.cmp').setup({
 require('endscroll').setup {}
 
 require('nvim-treesitter.configs').setup({
-  ensure_installed = { 'zig', 'lua', 'c', 'rust' },
+  ensure_installed = { 'zig', 'lua', 'c', 'rust', 'vento', 'javascript', 'css', 'html' },
   highlight = { enable = true }
 })
 
 vim.cmd('colorscheme vague')
 
 -- setup lsp
-vim.lsp.enable({ 'lua_ls', 'zls', 'clangd', 'rust-analyzer' })
+vim.lsp.enable({ 'lua_ls', 'zls', 'clangd', 'rust-analyzer', 'typescript-language-server' })
 
 vim.lsp.config('lua_ls',
   {
